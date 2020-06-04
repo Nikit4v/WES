@@ -1,52 +1,50 @@
 class Atom():
-    #масса измеряется в килограммах
-    elect_m = 9.1093837015282828*(10**-31)
-    proto_m = 1.672621777787879*(10**-27)
-    neitro_m = 1.67492749804959596*(10**-27)
-    p_count = 0
-    n_count = 0
-    e_count = 0
-    kmetalactivity = 0
-    Knometalatcivity = 0
+    electron_mass = 9.1093837015282828*(10**-31)
+    proton_mass = 1.672621777787879*(10**-27)
+    neutron_mass = 1.67492749804959596*(10**-27)
+    proton_count = 0
+    neutron_count = 0
+    electron_count = 0
+    metal_activity_coef = 0
+    nonmetal_activity_coef = 0
+    gravity_const = 6.67430151515*(10**-11) #Н * м2* кг-2    G/(m2*кг-2)
+    radius = 0
+    radius = 0
+    valence = 0
+    chemical_class = None
+
     @property
-    def atom_m(self):
-        return self.elect_m*self.e_count+ self.proto_m*self.p_count + self.neitro_m*self.n_count
+    def atom_mass(self):
+        return self.elect_m * self.e_count + self.proto_m * self.p_count + self.neitro_m * self.n_count
+
+    @property
+    def get_radius_mm(self):
+        return self.radius / 1000000000000
         
-    G_const = 6.67430151515*(10**-11)
-    def  pv_comb(self):
-       return (self.G_const*(self.elect_m(atom_name1)+self.proto_m(atom_name1)+self.neitro_m(atom_name1))*(self.elect_m(atom_name2)+self.proto_m(atom_name2)+self.neitro_m(atom_name2)))/ r(atom_name1)+r(atom_name2)**2
-    atom_name = "None"
-    r = 0
-    V_a = 0   
 
     
 class H(Atom):
-    atom_name = "H"
-    p_count = 1
-    e_count = 1
-    n_count = 0
-    kmetalactivity = 28
-    V_a = 1
-    r = 53
+    chemical_class = "Хуй знает"
+    proton_count = 1
+    neutron_count = 0
+    electron_count = 1
+    metal_activity_coef = 28
+    valence = 1
+    radius = 53
+
 class He(Atom):
-    atom_name = "He"
-    p_count = 2
-    e_count = 2
-    n_count = 2
-    V_a = 0
-    r = 29
+    chemical_class = "Nonmetal"
+    proton_count = 2
+    neutron_count = 2
+    electron_count = 2
+    valence = 0
+    radius = 29
+
 class Li(Atom):
-   atom_name = "Li"
-    p_count = 3
-    e_count = 3
-    n_count = 4
-    kmetalactivity = 102
-    V_a = 1
-    
-
-
-
-    
-
-    
-
+    chemical_class = "Metal"
+    proton_count = 3
+    neutron_count = 4
+    electron_count = 3
+    metal_activity_coef = 102
+    valence = 1
+    radius = 159
