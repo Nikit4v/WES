@@ -11,7 +11,7 @@ class Atom():
     radius = 0
     radius = 0
     valence = 0
-    chemical_class = None
+    chemical_class = ""
 
     @property
     def atom_mass(self):
