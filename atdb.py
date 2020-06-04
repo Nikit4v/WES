@@ -135,3 +135,78 @@ class Al(Atom):
     radius = 131
 class Si(Atom):
     ##
+    chemical_class = "Nonmetal"
+    proton_count = 14
+    neutron_count = 14
+    electron_count = 14
+    valence = 4
+    radius = 132
+class P(Atom):
+    ##
+    chemical_class = "Nonmetal"
+    proton_count = 15
+    neutron_count = 16
+    electron_count = 15
+    valence = 5
+    radius = 128
+class S(Atom):
+    ##
+    chemical_class = "Nonmetal"
+    proton_count = 16
+    neutron_count = 16
+    electron_count = 16
+    valence = 6
+    radius = 127
+class Cl(Atom):
+    ##
+    chemical_class = "Nonmetal"
+    proton_count = 17
+    neutron_count = 18
+    electron_count = 17
+    valence = 7
+    radius = 99
+class Ar(Atom):
+    ##
+    chemical_class = "Nonmetal"
+    proton_count = 18
+    neutron_count = 20
+    electron_count = 18
+    valence = 0
+    radius = 71
+class K(Atom):
+    ##
+    chemical_class = "Metal"
+    proton_count = 19
+    neutron_count = 20
+    electron_count = 19
+    metal_activity_coef = 99
+    valence = 1
+    radius = 235
+class Ca(Atom):
+    ##
+    chemical_class = "Metal"
+    proton_count = 20
+    neutron_count = 20
+    electron_count = 20
+    metal_activity_coef = 94
+    valence = 2
+    radius = 174
+class Sc(Atom):
+    ##
+    chemical_class = "Metal"
+    proton_count = 21
+    neutron_count = 23
+    electron_count = 21
+    metal_activity_coef = 67
+    valence = 3
+    radius = 162
+class Ti(Atom):
+    ##
+    chemical_class = "Metal"
+    proton_count = 22
+    neutron_count = 26
+    electron_count = 22
+    metal_activity_coef = 50
+    valence = 4
+    radius = 147
+#Витошка, ты дурак блин#
