@@ -99,7 +99,7 @@ class F(Atom):
     valence = 7
     radius = 73
 class Ne(Atom):
-    #(Радиус атома	? (38)[2] пм)   прямо с википедии#
+    #(Радиус атома	? (38)[2] пм)   прямо с википедии со знаком вопроса#
     chemical_class = "Nonmetal"
     proton_count = 10
     neutron_count = 10
@@ -206,7 +206,81 @@ class Ti(Atom):
     proton_count = 22
     neutron_count = 26
     electron_count = 22
-    metal_activity_coef = 50
+    metal_activity_coef = 35
     valence = 4
     radius = 147
-#Витошка, ты дурак блин#
+class V(Atom):
+    ##
+    chemical_class = "Metal"
+    proton_count = 23
+    neutron_count = 28
+    electron_count = 23
+    metal_activity_coef = 48
+    valence = 5
+    radius = 134
+class Cr(Atom):
+    ##
+    chemical_class = "Metal"
+    proton_count = 24
+    neutron_count = 28
+    electron_count = 24
+    metal_activity_coef = 44
+    valence = 6
+    radius = 130
+class Mn(Atom):
+    ##
+    chemical_class = "Metal"
+    proton_count = 25
+    neutron_count = 30
+    electron_count = 25
+    metal_activity_coef = 49
+    valence = 7
+    radius = 127
+class Fe(Atom):
+    chemical_class = "Metal"
+    proton_count = 26
+    neutron_count = 30
+    electron_count = 26
+    metal_activity_coef = 38
+    valence = 3
+    radius = 126
+class Co(Atom):
+    chemical_class = "Metal"
+    proton_count = 27
+    neutron_count = 32
+    electron_count = 27
+    metal_activity_coef = 34
+    valence = 2
+    radius = 125
+class Ni(Atom):
+    chemical_class = "Metal"
+    proton_count = 28
+    neutron_count = 31
+    electron_count = 28
+    metal_activity_coef = 32
+    valence = 2
+    radius = 124
+class Cu(Atom):
+    chemical_class = "Metal"
+    proton_count = 29
+    neutron_count = 35
+    electron_count = 29
+    metal_activity_coef = 17
+    valence = 1
+    radius = 128
+class Zn(Atom):
+    chemical_class = "Metal"
+    proton_count = 30
+    neutron_count = 35
+    electron_count = 30
+    metal_activity_coef = 43
+    valence = 2
+    radius = 138
+class Ga(Atom):
+    chemical_class = "Metal"
+    proton_count = 31
+    neutron_count = 39
+    electron_count = 31
+    metal_activity_coef = 40
+    valence = 3
+    radius = 141
