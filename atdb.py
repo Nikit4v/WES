@@ -20,6 +20,8 @@ class Atom():
     @property
     def get_radius_mm(self):
         return self.radius / 1000000000000
+
+#Надо заменить chemical_class с переменной на механизм <=|разделение на классы металлов и не металлов за частую зависят от соотношения числа электронов на внешнем слое к количеству орбиталей []
         
 #это важно для плотности атомов:
 #Эле́ктроотрица́тельность — фундаментальное химическое свойство атома, количественная характеристика способности атома в молекуле смещать к себе общие электронные пары, то есть способность атомов оттягивать к себе электроны других атомов.
@@ -284,3 +286,113 @@ class Ga(Atom):
     metal_activity_coef = 40
     valence = 3
     radius = 141
+class Ge(Atom):
+    chemical_class = "Metal"
+    proton_count = 32
+    neutron_count = 41
+    electron_count = 32
+    metal_activity_coef = 26
+    valence = 2
+    radius = 122.5
+class As(Atom):
+    #Это блин полуметалл...  И что делать?#
+    chemical_class = "Nonmetal"
+    proton_count = 32
+    neutron_count = 41
+    electron_count = 32
+    valence = 2
+    radius = 139 
+class Se(Atom):
+    chemical_class = "Nonmetal"
+    proton_count = 34
+    neutron_count = 45
+    electron_count = 34
+    valence = 6
+    radius = 140
+class Br(Atom):
+    chemical_class = "Nonmetal"
+    proton_count = 35
+    neutron_count = 45
+    electron_count = 35
+    valence = 7
+    radius = 185
+class Kr(Atom):
+    chemical_class = "Nonmetal"
+    proton_count = 36
+    neutron_count = 48
+    electron_count = 36
+    valence = 0
+    radius = 88
+class Rb(Atom):
+    chemical_class = "Metal"
+    proton_count = 37
+    neutron_count = 48
+    electron_count = 37
+    metal_activity_coef = 100
+    valence = 1
+    radius = 248
+class Sr(Atom):
+    chemical_class = "Metal"
+    proton_count = 38
+    neutron_count = 50
+    electron_count = 38
+    metal_activity_coef = 95
+    valence = 2
+    radius = 215
+class Y(Atom):
+    chemical_class = "Metal"
+    proton_count = 39
+    neutron_count = 50
+    electron_count = 39
+    metal_activity_coef = 88
+    valence = 3
+    radius = 178
+class Zr(Atom):
+    chemical_class = "Metal"
+    proton_count = 40
+    neutron_count = 51
+    electron_count = 40
+    metal_activity_coef = 49
+    valence = 4
+    radius = 160
+class Nb(Atom):
+    chemical_class = "Metal"
+    proton_count = 41
+    neutron_count = 53
+    electron_count = 41
+    metal_activity_coef = 46
+    valence = 5
+    radius = 146
+class Mo(Atom):
+    chemical_class = "Metal"
+    proton_count = 42
+    neutron_count = 54
+    electron_count = 42
+    metal_activity_coef = 31
+    valence = 3
+    radius = 139
+class Tc(Atom):
+    #Как его название? .  .  .  ТЕХНЕЦИЙ . . .  это блять технеций| мало этого, он еще и радиоактивен и не имеет стабильных изотопов...   Короче вообще генетически корявый во всем#
+    chemical_class = "Metal"
+    proton_count = 43
+    neutron_count = 56
+    electron_count = 43
+    metal_activity_coef = 19
+    valence = 2
+    radius = 136
+class Ru(Atom):
+    chemical_class = "Metal"
+    proton_count = 44
+    neutron_count = 57
+    electron_count = 44
+    metal_activity_coef = 19
+    valence = 2
+    radius = 134
+class Rh(Atom):
+    chemical_class = "Metal"
+    proton_count = 45
+    neutron_count = 58
+    electron_count = 45
+    metal_activity_coef = 15
+    valence = 3
+    radius = 134
